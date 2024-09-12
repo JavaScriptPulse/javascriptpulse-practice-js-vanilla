@@ -10,7 +10,7 @@ Welcome to the JavaScript Practice Repository! This repo is designed to help you
 - **Open `index.html` in your browser to start practicing.**
 # Using Visual Studio Code Live Server Extension
 
-# Use VS Code:
+## Use VS Code:
 
 1. Install the Live Server extension:
    - Open VS Code.
