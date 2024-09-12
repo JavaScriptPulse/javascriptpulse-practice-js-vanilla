@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+JavaScriptPulse/javascriptpulse-practice-js-vanilla
+
+<body>
+
+    <div id="header">
+        <button id="backButton" onclick="goBack()">⬅ Back</button>
+        <div id="social">
+            <a href="https://www.instagram.com/javascriptpulse/" target="_blank">
+                <img src="images/instagram-logo.png" alt="Instagram" id="instagramLogo">
+            </a>
+        </div>
+    </div>
+
+    <h1 id="taskTitle">Task Title</h1>
+    <p id="taskDescription">Task Description</p>
+
+
+    <h2>Example</h2>
+    <div style="position: relative;">
+        <pre id="exampleCode"><code>// Example will be loaded here</code></pre>
+        <button id="copyButton" onclick="copyCode()" style="position: absolute; right: 10px; top: 10px;">Copy</button>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Copied to clipboard!</div>
+
+
+    <h2>Task Requirements</h2>
+    <p id="taskRequirements">Requirements will be shown here</p>
+
+    <h2>Try It Yourself</h2>
+    <textarea id="codeArea" rows="10" cols="50" placeholder="// Type your code here..."></textarea>
+    <button onclick="runCode()">Run Code</button>
+
+    <h3>Output:</h3>
+    <pre id="outputArea">Output will be shown here...</pre>
+
+    <div id="feedback" style="display:none; margin-top:10px;">
+        <p id="feedbackMessage"></p>
+    </div>
+
+
+    <h2>Solution</h2>
+    <button onclick="showSolution()">Show Solution</button>
+    <div id="solution" style="position: relative; display:none;">
+        <pre><code id="solutionCode">// Solution will be shown here</code></pre>
+        <button id="copySolutionButton" onclick="copySolution()"
+            style="position: absolute; right: 10px; top: 10px;">Copy</button>
+    </div>
+
+
+
+    <script type="module" src="./scripts/task.js"></script>
+</body>
+
+</html>
